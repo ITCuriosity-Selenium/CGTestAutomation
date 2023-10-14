@@ -63,6 +63,7 @@ public class CarsGuideLogin2023SeptStepDef {
 	@Then("I should land on the Account Page")
 	public void i_should_land_on_the_account_page() {
 
+		System.out.println("Verifying the Test");
 		// Using Sign IN Page POM for verifying User Account		
 		String accountName = loginPage.LoginAccountTitle("John");
 		Assert.assertEquals("John", accountName);			
